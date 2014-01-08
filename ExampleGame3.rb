@@ -1,8 +1,8 @@
 key = false
+
 i=1
+
 while !key
-	
-	
 
 pages_with_questions = {}
 
@@ -21,6 +21,10 @@ File.open("story.txt", "r") do |infile|
 	end
 end
 
+puts
+puts "Let's play a game."
+puts "Pretend you just woke up..."
+puts 
 puts "Goodmorning"
 puts pages_with_questions["~p1"]
 
@@ -56,8 +60,6 @@ elsif answer == "n" || answer == "N"
 end
 
 end
-
-#What if I spelled my name with a "Ph"?
 
 =begin
 mode = false
