@@ -26,7 +26,7 @@ puts "Select 1, 2, or 3"
 mode = false
 while !mode
 	c = gets.chomp.to_i + 1
-	if [1, 2, 3].include?(c)
+	if [2, 3, 4].include?(c)
 		puts pages_with_questions["~p#{c}"]
 		mode = true
 	else
