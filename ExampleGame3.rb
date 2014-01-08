@@ -1,3 +1,9 @@
+key = false
+i=1
+while !key
+	
+	
+
 pages_with_questions = {}
 
 lines_grabbed = ""
@@ -33,6 +39,25 @@ while !mode
 		puts "Try again...select 1, 2, or 3 ONLY!"
 	end
 end
+
+puts "Would you like to play again? (y/n)"
+answer = gets.chomp.to_s
+
+if answer == "y" || answer == "Y"
+	key = false
+	i += 1
+elsif answer == "n" || answer == "N"
+	key = true
+	if i == 1
+		puts "You played once!  Thanks for playing."
+	else 
+		puts "You played #{i} times!  Thanks for playing."
+	end
+end
+
+end
+
+#What if I spelled my name with a "Ph"?
 
 =begin
 mode = false
