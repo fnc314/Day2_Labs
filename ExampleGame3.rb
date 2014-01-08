@@ -1,6 +1,6 @@
-key = false
-
 i=1
+
+key = false
 
 while !key
 
